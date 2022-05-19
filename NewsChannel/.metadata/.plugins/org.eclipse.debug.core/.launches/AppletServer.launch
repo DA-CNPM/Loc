@@ -4,6 +4,6 @@
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES"/>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.ibatis.javassist.tools.rmi.AppletServer"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value=""/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="WebNetFlix"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="WebNetFlix"/>
 </launchConfiguration>
