@@ -1,0 +1,31 @@
+package com.example.WebNetFlix.controller;
+
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.example.WebNetFlix.mapper.UserMapper;
+import com.example.WebNetFlix.model.User;
+import com.example.WebNetFlix.model.UserExample;
+
+@Controller
+public class HomePageController {
+	
+	@Autowired
+	UserMapper userMapper;
+	
+	@GetMapping("/")
+	public ModelAndView index() {
+		ModelAndView modelAndView = new ModelAndView("index");
+		
+		UserExample example = new UserExample();
+		
+		List<User> listUser = userMapper.selectByExample(example);
+		
+		return modelAndView;
+	}
+}

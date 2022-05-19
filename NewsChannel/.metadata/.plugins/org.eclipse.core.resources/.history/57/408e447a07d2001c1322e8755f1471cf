@@ -1,0 +1,5 @@
+package com.example.WebNetFlix.controller;
+
+public class HomePageController {
+
+}
